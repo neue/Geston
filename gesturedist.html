@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Onboard Distance</title>
+  <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+	<script src="libraries/sensors.js"></script>
+  <script src="gesturedist.js"></script>
+	<style>
+		html,body{
+      margin:0;padding:0;
+      background: #2a2a2a;
+      font: 25px "Menlo";
+      color: #333;
+    }
+    canvas{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+/*      image-rendering: pixelated;*/
+/*      -webkit-filter: blur(0.2px);*/ 
+      width: 600px;
+      height: 600px;
+    }
+	</style>
+</head>
+<body>
+<canvas id="particleCanvas" width="600" height="600"></canvas>
+</body>
+</html>
